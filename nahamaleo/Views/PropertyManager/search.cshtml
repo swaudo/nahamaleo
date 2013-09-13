@@ -1,0 +1,47 @@
+﻿@model nahamaleo.Models.PropertyModel
+
+<form action="/PropertyManager/Create" enctype="multipart/form-data" method="post">    <fieldset>
+        <legend>PropertyModel</legend>
+        <div class="editor-label">
+            <label for="property_location">property_location</label>
+        </div>
+        <div class="editor-field">
+            <input class="text-box single-line" id="property_location" name="property_location" type="text" value="" />
+            <span class="field-validation-valid" data-valmsg-for="property_location" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor-label">
+            <label for="property_type">property_type</label>
+        </div>
+        <div class="editor-field">
+            <input class="text-box single-line" id="property_type" name="property_type" type="text" value="" />
+            <span class="field-validation-valid" data-valmsg-for="property_type" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor-label">
+            <label for="no_of_rooms">no_of_rooms</label>
+        </div>
+        <div class="editor-field">
+            <input class="text-box single-line" id="no_of_rooms" name="no_of_rooms" type="text" value="" />
+            <span class="field-validation-valid" data-valmsg-for="no_of_rooms" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor-label">
+            <label for="rent_or_buy">rent_or_buy</label>
+        </div>
+        <div class="editor-field">
+            <input class="text-box single-line" id="rent_or_buy" name="rent_or_buy" type="text" value="" />
+            <span class="field-validation-valid" data-valmsg-for="rent_or_buy" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor-label">
+            <label for="property_cost">property_cost</label>
+        </div>
+        <div class="editor-field">
+            <input class="text-box single-line" data-val="true" data-val-number="The field property_cost must be a number." data-val-required="The property_cost field is required." id="property_cost" name="property_cost" type="number" value="" />
+            <span class="field-validation-valid" data-valmsg-for="property_cost" data-valmsg-replace="true"></span>
+        </div>
+        <div class="editor-field">
+            <input type="file" name="file" />
+        </div>
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+</form>
